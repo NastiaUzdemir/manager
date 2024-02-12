@@ -1,4 +1,5 @@
 package ru.netology;
+
 import java.util.Arrays;
 
 public class MovieManager {

@@ -1,4 +1,5 @@
 package ru.netology;
+
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -57,16 +58,16 @@ public class MovieManagerTest {
         Assert.assertArrayEquals(new Movie[]{movie3, movie2, movie1}, lastMovies);
     }
 
-        @Test
-        public void testConstructorWithLimit() {
-            int limit = 3;
+    @Test
+    public void testConstructorWithLimit() {
+        int limit = 3;
 
-            MovieManager movieManager = new MovieManager(limit);
+        MovieManager movieManager = new MovieManager(limit);
 
-            // Проверка на установление ограничения
-            Assert.assertEquals(limit, movieManager.getLimit());
+        // Проверка на установление ограничения
+        Assert.assertEquals(limit, movieManager.getLimit());
 
-            // Проверка, что при создании менеджера афиши не содержит фильмов
-            Assert.assertArrayEquals(new Movie[0], movieManager.findAll());
-        }
+        // Проверка, что при создании менеджера афиши не содержит фильмов
+        Assert.assertArrayEquals(new Movie[0], movieManager.findAll());
     }
+}
