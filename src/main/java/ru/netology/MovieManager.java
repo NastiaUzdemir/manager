@@ -1,7 +1,5 @@
 package ru.netology;
 
-import java.util.Arrays;
-
 public class MovieManager {
     private Movie[] movies;
     private int limit;
